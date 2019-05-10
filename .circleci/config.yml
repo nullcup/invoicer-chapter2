@@ -39,8 +39,7 @@ jobs:
          echo "GO BASE: ${GOPATH_BASE}";
          echo "GO HEAD: ${GOPATH_HEAD}";
          ls **/*;
-         go test \
-           github.com/${CIRCLE_PROJECT_USERNAME}/${CIRCLE_PROJECT_REPONAME}
+         go test
 
    - deploy:
        name: Build Docker image and push to Docker Hub
